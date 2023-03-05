@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  id="add-item-container"
+>
+  <div>
+    <h4
+      className="underline"
+    >
+      Add New Item
+    </h4>
+  </div>
+  <form
+    className=""
+    id="add-item-form"
+  >
+    <div
+      className="underline"
+    >
+      <label
+        className="form-label"
+      >
+        Item Name:
+      </label>
+      <input
+        className="form-control"
+        data-testid="item-add-name"
+        name="name"
+        onChange={[Function]}
+        placeholder="Example: Ethanol"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="underline"
+    >
+      <label
+        className="form-label"
+      >
+        Location:
+      </label>
+      <input
+        className="form-control"
+        data-testid="item-add-location"
+        name="location"
+        onChange={[Function]}
+        placeholder="Example: Cupboard"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="underline"
+    >
+      <label
+        className="form-label"
+      >
+        Batch No.:
+      </label>
+      <input
+        className="form-control"
+        data-testid="item-add-batch"
+        name="batch"
+        onChange={[Function]}
+        placeholder="Example: #1EF43T"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="underline"
+    >
+      <label
+        className="form-label"
+      >
+        Quantity:
+      </label>
+      <input
+        className="form-control"
+        data-testid="item-add-quantity"
+        name="quantity"
+        onChange={[Function]}
+        placeholder="Example: 53"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="underline"
+    >
+      <label
+        className="form-label"
+      >
+        Expiry Date:
+      </label>
+      <input
+        className="form-control"
+        data-testid="item-add-expiry"
+        name="expiry"
+        onChange={[Function]}
+        type="date"
+        value=""
+      />
+    </div>
+    <div
+      className="underline"
+    >
+      <label
+        className="form-label"
+      >
+        Purchase URL:
+      </label>
+      <input
+        className="form-control"
+        data-testid="item-add-url"
+        name="url"
+        onChange={[Function]}
+        placeholder="Example: www.amazon.co.uk"
+        type="text"
+        value=""
+      />
+    </div>
+    <button
+      className="btn btn-secondary"
+      disabled={true}
+      id="add-item-submit"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </form>
+</section>
+`;

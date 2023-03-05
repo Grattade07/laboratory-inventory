@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className=""
+  id="signin-form"
+>
+  <div
+    id="signin-header"
+  >
+    <h3
+      className="underline"
+    >
+      Sign In
+    </h3>
+  </div>
+  <section
+    className="underline"
+    id="signin"
+  >
+    <div>
+      <label
+        className="form-label"
+        htmlFor="formUsername"
+      >
+        User Name:
+      </label>
+      <input
+        className="form-control"
+        id="formUsername"
+        onChange={[Function]}
+        placeholder="Enter Username..."
+        type="text"
+      />
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="formPassword"
+      >
+        Password:
+      </label>
+      <input
+        className="form-control"
+        id="formPassword"
+        onChange={[Function]}
+        placeholder="Enter Password..."
+        type="password"
+      />
+    </div>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="changePasswordButton"
+      onClick={[Function]}
+      type="button"
+    >
+      Forgot Password?
+    </button>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="signin-button"
+      onClick={[Function]}
+      type="button"
+    >
+      SIGN IN
+    </button>
+  </section>
+  <section
+    id="new-user"
+  >
+    <h4>
+      New User?
+    </h4>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="signup-button"
+      onClick={[Function]}
+      type="button"
+    >
+      SIGN UP
+    </button>
+  </section>
+</form>
+`;

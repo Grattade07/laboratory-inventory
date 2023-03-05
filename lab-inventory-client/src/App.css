@@ -1,0 +1,294 @@
+.App {
+  text-align: center;
+  background-color: rgb(96, 141, 117);
+}
+
+/* general styling to give an underline */
+.underline {
+  border-bottom: 3px solid rgb(136, 136, 136);
+  margin-bottom: 0;
+}
+
+/* styling for application header */
+#header {
+  width: 100vw;
+  height: 20vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+  background-color: rgb(98, 70, 107);
+  border-bottom: 2px solid rgb(41, 46, 30);
+  box-shadow: 5px 8px 20px;
+}
+
+/* styling for header logo */
+#company-logo {
+  height: 70%;
+}
+
+/* styling for application title */
+#app-name {
+  border: 2px solid black;
+  padding: 16px;
+  background-color: rgb(229, 231, 231);
+  font-size: 54px;
+  color: rgb(54, 92, 90);
+  border-radius: 10px;
+  box-shadow: 5px 8px 10px;
+}
+
+/* styling for sign in header */
+#signin-header {
+  width: 65%
+}
+
+#signin-header > h3 {
+  font-size: 18px;
+}
+
+/* styling for sign in form */
+#signin-form {
+  height: 100%;
+  border: 2px solid black;
+  padding: 5px 8px;
+  background-color: rgb(229, 231, 231);
+  border-radius: 8px;
+  box-shadow: 5px 8px 10px;
+  
+}
+
+/* styling for the login window when user has logged in */
+#login-welcome {
+  height: 60%;
+  width: 15%;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: rgb(229, 231, 231);
+  border-radius: 8px;
+  box-shadow: 5px 8px 15px;
+}
+
+/* styling for signin section of sign in form */
+#signin {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 13px;
+  text-align: start;
+}
+
+/* styling for all form labels */
+.form-label {
+  font-size: 12px;
+}
+
+/* styling for all form inputs */
+.form-control {
+  height: 20px;
+  width: 50%;
+}
+
+/* font sizes for the signin inputs */
+#formUsername, #formPassword {
+  font-size: 12px;
+}
+
+/* styling for sign in button */
+#signin-button {
+  height: 100%;
+  width: 50%;
+  font-size: 12px;
+  padding: 6px 0;
+}
+
+/* styling for the change password button  */
+#changePasswordButton {
+  height: 100%;
+  width: 60%;
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+/* styling for the sign up section */
+#new-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 7px;
+  gap: 40px;
+}
+
+/* font size for the sign up h4 element */
+#new-user > h4 {
+  font-size: 16px;
+}
+
+/* styling for the signup button */
+#signup-button {
+  font-size: 12px;
+  width: 26%;
+  padding: 4px 0;
+}
+
+/* styling for the main element */
+#main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 3fr 6fr;
+  column-gap: 30px;
+  padding: 20px;
+  height: 80vh;
+  margin-right: 5%;
+}
+
+/* styling for the table container */
+#table-container {
+  border: 1px solid black;
+  max-width: 82%;
+  margin-left: 6%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-color: rgb(245, 244, 244);
+  border: 2px solid black;
+  box-shadow: 5px 8px 10px;
+}
+
+/* styling for the inventory table */
+#product-table {
+  text-align: center;
+  width: 100%;
+}
+
+#product-table > tbody {
+  overflow: scroll;
+}
+
+/* styling for the thead element of table */
+#table-header {
+  background-color: rgb(147, 108, 160);
+  border-bottom: 2px solid black;
+}
+
+/* styling for the search elements */
+#item-search {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  height: 43px;
+}
+
+/* styling for the search bar */
+#search-bar {
+  max-width: 200px;
+}
+
+/* styling for the clear search button */
+#clear-search {
+  max-width: 90px;
+  font-size: 10px;
+}
+
+/* styling for the search input */
+#search-input {
+  height: 43px;
+}
+
+/* styling for the filter module */
+#filters-container {
+  background-color: rgb(206, 170, 178);
+  padding: 10px 0px 0px 0px;
+  width: 60%;
+  border-radius: 25px;
+  box-shadow: 5px 8px 15px;
+  justify-self: center;
+}
+
+/* styling for the filter lsit container */
+#filter-list {
+  background-color: white;
+  padding: 10px;
+  text-align: start;
+  font-size: 14px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* styling for the container for adding items */
+#add-item-container {
+  background-color: white;
+  margin-top: 15px;
+  padding: 5px 0px 0px 0px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(98, 70, 107);
+  box-shadow: 5px 8px 15px;
+}
+
+/* text alignment for the add item form */
+#add-item-form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  background-color: rgba(238, 236, 234, 0.788);
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* styling for the add item submit button */
+#add-item-submit {
+  width: 35%;
+  align-self: center;
+  margin-top: 7px;
+}
+
+/* styling for the quantity adjustment buttons */
+.quantity-button {
+  width: 18%;
+  padding: 0;
+  text-align: center;
+  margin: 0 6px;
+}
+
+/* styling for the quantity + buttons */
+.item-quantity-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+}
+
+/* styling for the containers showing the itemn quantity */
+.item-quantity {
+  width: 30px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(158, 120, 170);
+  height: 10vh;
+}
+
+/* styling for links in footer */
+.links {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* styling for link logos */
+.linkLogos {
+  width: 45px;
+}

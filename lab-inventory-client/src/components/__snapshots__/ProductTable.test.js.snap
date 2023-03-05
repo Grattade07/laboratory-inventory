@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  id="table-container"
+>
+  <table
+    className="table table-striped table-bordered"
+    id="product-table"
+  >
+    <thead
+      id="table-header"
+    >
+      <tr>
+        <th>
+          Item
+        </th>
+        <th>
+          Location
+        </th>
+        <th>
+          Batch
+        </th>
+        <th>
+          Quantity
+        </th>
+        <th>
+          Expiry Date
+        </th>
+        <th>
+          Purchase Link
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <tr>
+        <td
+          colSpan={6}
+          rowSpan={11}
+        >
+          Please Login to see inventory...
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31ffa5b3.css",
+    "main.js": "/static/js/main.060e8b5e.js",
+    "static/js/787.48688808.chunk.js": "/static/js/787.48688808.chunk.js",
+    "static/media/Conical_flask_teal.png": "/static/media/Conical_flask_teal.55a774149f4aea28c79b.png",
+    "index.html": "/index.html",
+    "main.31ffa5b3.css.map": "/static/css/main.31ffa5b3.css.map",
+    "main.060e8b5e.js.map": "/static/js/main.060e8b5e.js.map",
+    "787.48688808.chunk.js.map": "/static/js/787.48688808.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31ffa5b3.css",
+    "static/js/main.060e8b5e.js"
+  ]
+}
