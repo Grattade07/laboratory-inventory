@@ -51,5 +51,3 @@ mongoose.connection.on("error", function() {
 app.use("/users", usersRouter)
 
 app.use("/inventory", inventoryRouter)
-
->>>>>>> b9a92391d21709d28f2e6cdfd1d0a48e29f30a1f
