@@ -70,7 +70,7 @@ exports.loginUser = function (req,res) {
             res.status(500).send({message: "An error occurred while retrieving the list of users"})
         } else {
             /* checks if the user exists */
-            for (let i = 0; i < users.length; i++){
+            for (let i = 0; i <= users.length; i++){
                 if (users[i].username == req.body.username && users[i].password == req.body.password) {
                     let jwToken = jwt.sign({
                         username: users[i].username,
@@ -90,7 +90,7 @@ exports.loginUser = function (req,res) {
                     /* sends message if username matches but password is incorrect */
                     res.send({message: "Password Incorrect"})
                 }
-                else if (i >= users.length) {
+                else if (i == users.length) {
                 
                 /* sends message if user does not exist */
                 res.send({message: "User does not exist"})
