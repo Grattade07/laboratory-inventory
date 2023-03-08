@@ -15,6 +15,7 @@ function Login () {
     const [message, setMessage] = useState("")
     const [newPassword, setNewPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
+    const [loginMessage, setLoginMessage] = useState("")
 
     const isLoggedIn = useSelector((state) => state.inventory.isLoggedIn)
 
@@ -49,7 +50,8 @@ function Login () {
             setTimeout(handleCloseSignUp, 2000) && 
             dispatch(addJWToken(res.token)) && 
             dispatch(setIsLoggedIn(res.isLoggedIn)) && 
-            dispatch(setIsAdmin(res.isAdmin))
+            dispatch(setIsAdmin(res.isAdmin)) && 
+            setTimeout(resetMessage,2000)
         })
     }
 
@@ -64,9 +66,14 @@ function Login () {
         })
         .then(res => res.json())
         .then(res => {
-            dispatch(addJWToken(res.token))
-            dispatch(setIsLoggedIn(res.isLoggedIn))
-            dispatch(setIsAdmin(res.isAdmin))
+            setLoginMessage(res.message)
+            console.log(res.message)
+            res.message === "Login Successful" ? 
+            dispatch(addJWToken(res.token)) &&
+            dispatch(setIsLoggedIn(res.isLoggedIn)) &&
+            dispatch(setIsAdmin(res.isAdmin)) && setPasswordLogin("") :
+            setTimeout(resetLoginMessage, 2000) &&setPasswordLogin("") 
+            
         })
     }
 
@@ -91,6 +98,11 @@ function Login () {
         setMessage("")
     }
 
+    /* resets login message */
+    function resetLoginMessage() {
+        setLoginMessage("")
+    }
+
     /* shows if the user is logged in */
     if (isLoggedIn) {
         return (
@@ -101,6 +113,9 @@ function Login () {
                 <Button onClick={() => {
                     dispatch(setIsLoggedIn(false))
                     dispatch(removeJWToken())
+                    dispatch(setIsAdmin(false))
+                    setUserNameLogin("")
+                    setLoginMessage("") 
                     }}>Logout</Button>
             </section>
         )
@@ -116,12 +131,12 @@ function Login () {
 
             <Form.Group controlId="formUsername">
                 <Form.Label>User Name:</Form.Label>
-                <Form.Control type="text" placeholder="Enter Username..." onChange={(e) => setUserNameLogin(e.target.value)}/>
+                <Form.Control type="text" placeholder="Enter Username..." onChange={(e) => setUserNameLogin(e.target.value)} value={userNameLogin}/>
             </Form.Group>
             
             <Form.Group controlId="formPassword">
                 <Form.Label>Password:</Form.Label>
-                <Form.Control type="password" placeholder="Enter Password..." onChange={(e) => setPasswordLogin(e.target.value)}/>
+                <Form.Control type="password" placeholder="Enter Password..." onChange={(e) => setPasswordLogin(e.target.value)} value={passwordLogin}/>
             </Form.Group>
 
             {/* button shows the modal to change the user password */}
@@ -141,12 +156,14 @@ function Login () {
                         <Form>
                             <Form.Group controlId="changePasswordUsername">
                                 <Form.Label>Username:</Form.Label>
-                                <Form.Control type="text" placeholder="Username..." onChange={(e) => {setUserNameLogin(e.target.value)}}/>
+                                <Form.Control type="text" placeholder="Username..." onChange={(e) => {setUserNameLogin(e.target.value)}} 
+                                />
                             </Form.Group>
 
                             <Form.Group controlId="newPassword">
                                 <Form.Label>New Password:</Form.Label>
-                                <Form.Control type="password" placeholder="New Password..." onChange={(e) => {setNewPassword(e.target.value)}}/>
+                                <Form.Control type="password" placeholder="New Password..." onChange={(e) => {setNewPassword(e.target.value)}}
+                                />
                             </Form.Group>
 
                             <Form.Group controlId="confirmPassword">
@@ -187,6 +204,10 @@ function Login () {
             })}>
                 SIGN IN
             </Button>
+
+            <h6 id="login-message">
+                {loginMessage}
+            </h6>
                 
             </section>
 
