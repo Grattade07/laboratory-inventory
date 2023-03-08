@@ -71,7 +71,11 @@ exports.loginUser = function (req,res) {
         } else {
             /* checks if the user exists */
             for (let i = 0; i <= users.length; i++){
-                if (users[i].username == req.body.username && users[i].password == req.body.password) {
+            if (i == users.length) {
+                
+                /* sends message if user does not exist */
+                res.send({message: "User does not exist"})
+            } else if (users[i].username == req.body.username && users[i].password == req.body.password) {
                     let jwToken = jwt.sign({
                         username: users[i].username,
                         password: users[i].password,
@@ -90,11 +94,7 @@ exports.loginUser = function (req,res) {
                     /* sends message if username matches but password is incorrect */
                     res.send({message: "Password Incorrect"})
                 }
-                else if (i == users.length) {
                 
-                /* sends message if user does not exist */
-                res.send({message: "User does not exist"})
-            }
         }
         }
     })
