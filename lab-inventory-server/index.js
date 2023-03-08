@@ -24,7 +24,7 @@ mongoose.Promise = global.Promise
 
 
 /* server serves the build of the client */
-/* app.use(express.static("../lab-inventory-client/build")) */
+app.use(express.static("../lab-inventory-client/build"))
 
 /* set server to listen to port 3001 or given environment */
 const port = process.env.PORT || 3001
