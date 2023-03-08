@@ -80,17 +80,22 @@ exports.loginUser = function (req,res) {
                     "secretKey"
                     )
 
-                    return res.send({
+                    res.send({
                         message : "Login Successful",
                         isLoggedIn : true,
                         token: jwToken,
                         isAdmin: users[i].admin
                     })
+                } else if (users[i].username == req.body.username && users[i].password != req.body.password) {
+                    /* sends message if username matches but password is incorrect */
+                    res.send({message: "Password Incorrect"})
                 }
+                else if (i >= users.length) {
                 
                 /* sends message if user does not exist */
                 res.send({message: "User does not exist"})
             }
+        }
         }
     })
 }
