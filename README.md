@@ -1,13 +1,21 @@
 # Laboratory-inventory
 
-This project was created as my final project during my Web Development bootcamp. It is an single-page web application that functions as an inventory management for a laboratory. It was built using React and Bootstrap for the front-end, with Express and Mongoose used to communicate with the database on MongoDB using a custom API with middleware and JWTokens used to authenitcate users.
+This project was created as my final project during my Web Development bootcamp. It is an single-page web application that functions as an inventory management for a laboratory. It was built using React and Bootstrap for the front-end, with Express and Mongoose used to communicate with the database on MongoDB using a custom API with middleware and JWTokens used to authenticate users.
 
 ## Table of Contents
 
 Section | Link |
 --- | --- |
+Wireframe | [Link](https://github.com/Grattade07/laboratory-inventory/edit/main/README.md#project-wireframe)
 How to install | [Link](https://github.com/Grattade07/laboratory-inventory/edit/main/README.md#install-the-project-locally)
 How to use | [Link](https://github.com/Grattade07/laboratory-inventory/edit/main/README.md#how-to-use-application)
+
+## Project Wireframe
+
+During the preparation of the project I created a wireframe to design the application (wireframe created using draw.io)
+
+![image](https://user-images.githubusercontent.com/107367099/225123792-315654d5-abea-4406-9985-0ae47e8e7943.png)
+
 
 ## Install the project locally
 
