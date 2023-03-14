@@ -22,7 +22,8 @@ During the preparation of the project I created a wireframe to design the applic
 (DISCLAIMER: As the application requires a MongoDBURI to operate, a local clone of the repo will not be able to completely function. To experience the working application go to <a href="https://laboratory-inventory.onrender.com" target="_blank">this website</a> )
 
 * To install the project to your local machine get the repo URL from here:
-![image](![image](https://user-images.githubusercontent.com/107367099/225118706-649b2b1a-13b7-40e9-af12-50c160ec4b39.png))
+
+![image](https://user-images.githubusercontent.com/107367099/225124052-85f45854-2ad3-4e77-871b-7e3f0e686338.png)
 
 * Go to the folder you want to clone the repo to on your desktop
 
